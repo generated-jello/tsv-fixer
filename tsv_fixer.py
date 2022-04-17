@@ -35,7 +35,7 @@ with open(bad_file_name, 'rb') as bad_file, \
         # the bad characters.
         for i in range(0, len(bad_line)):
             if bad_line[i] == BAD_SWEDISH_BIG_O:
-                logging.warning(f'Found a bad character {hex(bad_line[i])} '
+                logging.warning(f'Found a bad character {hex(bad_line[i])} ' \
                     'on line {line_count}')
                 fix_line += GOOD_SWEDISH_BIG_O
             else:
